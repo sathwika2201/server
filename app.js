@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
     {
-        origin : "*",
+        origin : ["https://weather-api-seven-omega.vercel.app"],
         methods : ["POST","GET"],
         credentials : true
     }
